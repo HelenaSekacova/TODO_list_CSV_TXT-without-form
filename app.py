@@ -96,7 +96,7 @@ db=DB()
 @app.route('/todos')
     # 0. combinations possible
     # 1. get all tasks => http:.../todos'
-    # 2. get all tasks for specific period => http:../todos?od=YYYY-mm-dd&do=YYYY-mm-dd'
+    # 2. get all tasks for specific period => http:../todos?od=YYYY-mm-dd&do=YYYY-mm-dd'; 'od' is 'since'; 'do' is 'until'
     # 3. get all tasks which should be done until today => http:../todos?do=now'
     # 4. get all tasks which should be done after today => http:../todos?od=now'
     # 5. get all tasks which should be done until/after today and are (not) done => http:../todos?do/od=now&is_done=(not-done) done'
